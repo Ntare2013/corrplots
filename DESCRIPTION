@@ -1,0 +1,12 @@
+Package: corrplots
+Type: Package
+Title: Correlation and scatter plots
+Version: 0.1.0
+Author: HB Ntare
+Maintainer: The package maintainer <hamntare2013@hotmail.com>
+Description: Calculates correlation coefficients of Pearson, Spearman and Kendall and plots
+    scatter plots, and includes statistical significancies of the correlation coefficients
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
