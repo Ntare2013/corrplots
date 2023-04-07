@@ -42,6 +42,7 @@ corplots = function(dt, group){
 }
 
 par(mar = c(1, 1, 1, 1))
+corplots(dat)
 title(main = "Correlation coefficients and scatter plots", line = 0)
 mtext(quote(paste(italic("Significance levels"), ":" , " (***) for " , 0 < {p <= 0.001 }, ";" , "  (**) for " , 0.001 < {p <= 0.01 },";" , "  (*) for " , 0.01 < {p <= 0.05 },";" , italic("  Otherwise, insignificant"))), cex = 0.7, side = 1, line = -0.4)
 
