@@ -1,4 +1,4 @@
-#' Computes all three measures of correlation and adds scatter plots
+#' Computes all three measures of correlation, their statistical significance and adds scatter plots
 #' @export
 #' @keywords internal
 
@@ -38,9 +38,12 @@ corplots = function(dt, group){
         lower.panel = correlation.panel,
         upper.panel = scatterplot.panel)
 
-  title(main = "Correlation coefficients and scatter plots", line = 0)
-  mtext(quote(paste(italic("Significance levels"), ":" , " (***) for " , 0 < {p <= 0.001 }, ";" , "  (**) for " , 0.001 < {p <= 0.01 },";" , "  (*) for " , 0.01 < {p <= 0.05 },";" , italic("  Otherwise, insignificant"))), cex = 0.7, side = 1, line = -0.4)
-
-  par(mar = c(1, 1, 1, 1))
-
+ 
 }
+
+par(mar = c(1, 1, 1, 1))
+corplots(dat)
+title(main = "Correlation coefficients and scatter plots", line = 0)
+mtext(quote(paste(italic("Significance levels"), ":" , " (***) for " , 0 < {p <= 0.001 }, ";" , "  (**) for " , 0.001 < {p <= 0.01 },";" , "  (*) for " , 0.01 < {p <= 0.05 },";" , italic("  Otherwise, insignificant"))), cex = 0.7, side = 1, line = -0.4)
+
+
